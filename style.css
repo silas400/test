@@ -1,0 +1,111 @@
+/* General body styles */
+body {
+    background-color: #e0f7fa; /* Light bluish color */
+    font-family: Arial, sans-serif; /* Modern, readable font */
+    color: #333; /* Dark gray for contrast against light background */
+    margin: 0;
+    padding: 20px; /* Add some padding around the content */
+}
+
+/* Main container styles */
+#main {
+    width: fit-content; /* Adjust width as needed */
+    max-width: 1200px; /* Prevents the content from becoming too wide on large screens */
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    background-color: #ffffff; /* Optional: add a white background to the main content area */
+    padding: 20px; /* Add padding inside the main content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners for modern feel */
+}
+
+/* Video styles */
+#myVideo {
+    width: 100%; /* Make video responsive */
+    max-width: 560px; /* Adjust based on your preference */
+    border-radius: 5px; /* Slight rounded corners for the video */
+    border: 3px solid #007BFF;
+}
+
+/* Button styles */
+#explainButton {
+    background-color: #007BFF; /* A solid, friendly blue */
+    color: white; /* White text for readability */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer; /* Make it clear it’s clickable */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#explainButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#specificQuestion {
+    width: 80%; /* Adjust based on your layout, can be less or more */
+    max-width: 550px; /* To ensure it does not become too wide on large screens */
+    height: 100px; /* Height of the textbox, adjust as needed */
+    margin: 15px 0; /* Add some space above and below the textbox */
+    padding: 10px; /* Spacing inside the textbox for text */
+    font-size: 16px; /* Text size, adjust based on preference */
+    color: #333; /* Text color, dark for readability */
+    background-color: #f8fdff; /* Light background to match theme */
+    border: 2px solid #007BFF; /* Border color to match button and other styles */
+    border-radius: 5px; /* Rounded corners for modern appearance */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle inner shadow for depth */
+    resize: vertical; /* Allows the user to resize the textbox vertically */
+    outline: none; /* Removes the default focus outline */
+}
+
+#specificQuestion:focus {
+    border-color: #0056b3; /* Darker border color when textbox is focused */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for focus */
+}
+
+/* Content styles */
+#contentExplained {
+    width: 100%; /* Match the width of the main container */
+    margin-top: 15px; /* Space from the video/button */
+}
+
+#contentExplained div {
+    padding: 15px; /* Spacing inside each content div */
+    margin-bottom: 15px; /* Space between content divs */
+    background-color: #f8fdff; /* Very light blue for the content divs to stand out slightly */
+    border-radius: 5px; /* Rounded corners for the content divs */
+    border-left: 5px solid #007BFF; /* Blue accent on the left */
+    cursor: pointer;
+}
+
+#contentExplained div:hover {
+    background-color: #e0f0f5; /* Slightly darker shade of blue */
+}
+
+#contentExplained li {
+    margin-bottom: 10px; /* Space between list items if used */
+}
+
+/* Optional: Style for markdown generated HTML elements inside contentExplained */
+#contentExplained h2 {
+    color: #007BFF; /* Style headings with the same blue as buttons */
+    margin-top: 20px; /* Space above headings */
+}
+
+#contentExplained p {
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+#contentExplained pre, #contentExplained code {
+    background-color: #f4f4f4; /* Light background for code */
+    border-radius: 5px; /* Rounded corners for code blocks */
+    width: fit-content;
+    padding: 10px; /* Padding inside code blocks */
+    overflow-x: auto; /* Handle long lines of code */
+    font-family: 'Courier New', Courier, monospace; /* Font for code */
+    line-height: 2.2;
+}
